@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "2. Screens/2.1 Target.md",
+            "file": "1. Intro.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Screens/2.1 Target.md",
+                "file": "1. Intro.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,7 +88,7 @@
   },
   "active": "3b27cdb5355be188",
   "lastOpenFiles": [
-    "2. Screens/2.1 Target.md",
-    "1. Intro.md"
+    "1. Intro.md",
+    "2. Screens/2.1 Target.md"
   ]
 }
