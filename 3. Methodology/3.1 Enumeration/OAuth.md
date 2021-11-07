@@ -27,11 +27,11 @@
 ## Grant Types
 ### Code
 response_type = authorization_token
-![[Pasted image 20211107141523.png]]
+![[OAuthCode.png]]
 
 ### Implicit
 response_type = token
-![[Pasted image 20211107142530.png]]
+![[OAuthToken.png]]
 [[3.1 Implicit OAuth Tokens]]
 
 # OpenID Connect
