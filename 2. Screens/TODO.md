@@ -1,0 +1,4 @@
+- Comparer
+- Sequencer
+- User options
+- Project options

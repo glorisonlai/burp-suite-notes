@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "1. Intro.md",
+            "file": "2. Screens/TODO.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1. Intro.md",
+                "file": "2. Screens/TODO.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,7 +88,15 @@
   },
   "active": "3b27cdb5355be188",
   "lastOpenFiles": [
-    "1. Intro.md",
-    "2. Screens/2.1 Target.md"
+    "2. Screens/TODO.md",
+    "3. Methodology/3.1 Enumeration/OAuth.md",
+    "2. Screens/2.1 Dashboard.md",
+    "2. Screens/2.7 Extender.md",
+    "2.7 Extender.md",
+    "2. Screens/2.2 Target.md",
+    "2. Screens/2.6 Decoder.md",
+    "2. Screens/2.5 Intruder.md",
+    "2. Screens/2.4 Repeater.md",
+    "2. Screens/2.3 Proxy.md"
   ]
 }
