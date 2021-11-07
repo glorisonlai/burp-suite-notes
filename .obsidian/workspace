@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "3. Methodology/3.1 Enumeration/OAuth.md",
-            "mode": "preview"
+            "file": "2. Screens/2.1 Dashboard.md",
+            "mode": "source"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3. Methodology/3.1 Enumeration/OAuth.md",
+                "file": "2. Screens/2.1 Dashboard.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,10 +88,10 @@
   },
   "active": "5738a1ec2304c158",
   "lastOpenFiles": [
+    "2. Screens/2.1 Dashboard.md",
     "3. Methodology/3.1 Enumeration/OAuth.md",
     "2. Screens/2.4 Repeater.md",
     "2. Screens/2.2 Target.md",
-    "2. Screens/2.1 Dashboard.md",
     "2. Screens/Images/Dashboard.png",
     "2. Screens/Images/IntruderPayload.png",
     "2. Screens/Images/Encoder.png",
