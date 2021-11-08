@@ -27,10 +27,12 @@
 ## Grant Types
 ### Code
 response_type = authorization_token
+
 ![](OAuthCode.png)
 
 ### Implicit
 response_type = token
+
 ![](OAuthToken.png)
 [[3.1 Implicit OAuth Tokens]]
 
