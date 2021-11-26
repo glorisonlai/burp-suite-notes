@@ -1,5 +1,6 @@
 # Middleware
 ## Headers
-**Useful for seeing uncontrollable URL responses**
+**Useful for injecting into URL responses**
+- `Host: <HOST>` 
 - `X-Forwarded-For: <IP>`
 - `X-Forwarded-Host: <HOST>`
