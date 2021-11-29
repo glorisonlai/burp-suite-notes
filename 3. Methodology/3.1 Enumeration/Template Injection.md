@@ -1,5 +1,6 @@
 # Template Injection
 ## Client Side (XSS)
+**Try looking for Debug panel**
 
 ## Server Side
 ** Enumerate Templating Engine by sending invalid input **

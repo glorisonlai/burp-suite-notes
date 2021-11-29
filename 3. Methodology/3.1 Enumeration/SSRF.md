@@ -1,6 +1,5 @@
 # SSRF
 **Look for queries that access backend systems**
-
 ## Alternative Localhost
 ### 127.0.0.1
 - `21307064330`
@@ -17,3 +16,8 @@
 - `http://<NORMAL>@<SSRF URL>/<PATH>`
 - `http://<SSRF URL>#<NORMAL>/<PATH>`
 - `http://<NORMAL>.<DOMAIN>`
+
+## Headers
+- Referer
+- X-Forwarded-Host
+- Origin

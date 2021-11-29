@@ -5,6 +5,10 @@
 Windows/Unix - `|` `||` `&` `&&`
 Unix - `;` `\n` `0x0a`
 
+### Comments
+Unix - `#`
+Windows - `::`
+
 ### Obvious Injection
 Bash - `& echo blah &`
 
