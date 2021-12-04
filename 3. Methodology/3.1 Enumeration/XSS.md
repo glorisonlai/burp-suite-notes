@@ -35,6 +35,13 @@
 ## Href
 - `javascript:alert()`
 
+# Bypassing WAF
+**Brute force allowed tags/attributes**
+**Remember attributes may be blocked only on specific tags - Check all combinations**
+**Remember to use Iframes where necessary**
+## Neat Tricks
+- Focus on element with ID -> `<URL>#<ID>`
+
 # Angular XSS
 **Identify page runs Angular first. Wappalyzer works well**
 **Head of page will point to Angular source**
